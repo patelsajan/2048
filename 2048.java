@@ -68,7 +68,6 @@ class TwentyFortyEight {
                 }
             }
         }
-        System.out.println("number of zeroes are "+numberofzeroes);
         if(numberofzeroes==0){
             gameover =true;
         }else{
