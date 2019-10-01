@@ -19,6 +19,7 @@ class TwentyFortyEight {
     public static void start()  {
         addRandom();
         while(!gameover){
+		clearScreen();
             addRandom();
             show();
             System.out.println("enter 2 to move DOWN, 8 to move UP, 6 to move RIGHT and 4 to move LEFT\n[OR]\n q to quit.");
