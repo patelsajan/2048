@@ -19,7 +19,6 @@ class TwentyFortyEight {
     public static void start()  {
         addRandom();
         while(!gameover){
-            clearScreen();
             addRandom();
             show();
             System.out.println("enter 2 to move DOWN, 8 to move UP, 6 to move RIGHT and 4 to move LEFT\n[OR]\n q to quit.");
@@ -72,17 +71,12 @@ class TwentyFortyEight {
             gameover =true;
         }else{
             int randomnumber =(int) (Math.random()*numberofzeroes+1);
-            
             int reached = 0;
             for(int m =0;m<matrix.length;m++){
                 for(int n =0;n<matrix.length;n++){
                     if(matrix[m][n]==0){
                         reached ++;
-                       
-                        // break;
-                    
                         if(reached==randomnumber){
-                           
                             matrix[m][n] = 2;
                             break;
                         }
@@ -217,12 +211,7 @@ class TwentyFortyEight {
                 return Integer.toString(number);
         }
     }
-    public static boolean compare(int[][] arr,int[][] arr1){
-        if(Arrays.equals(arr[0], arr1[0])&&Arrays.equals(arr[1], arr1[1])&&Arrays.equals(arr[2], arr1[2])&&Arrays.equals(arr[3], arr1[3])){
-            return true;
-        }
-        return false;
-    }
+    
 
 
 }
